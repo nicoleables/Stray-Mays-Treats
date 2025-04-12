@@ -1,0 +1,106 @@
+/* Root Container */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page spans the full viewport height */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height for root container */
+  }
+  
+  /* Product Detail Page Container */
+  .product-detailpage {
+    flex-grow: 1; /* Allows the content to take up available space */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--accent-color); /* Light background for contrast */
+    margin-top: 2.5rem; /* Adds spacing between the header and content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically if short */
+    min-height: 60vh; /* Ensure a minimum height to push the footer down */
+  }
+  
+  /* Product Info Section */
+  .product-infopage {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  /* Product Image Styling */
+  .product-detail-imagepage {
+    max-width: 300px; /* Scaled image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Product Text Section */
+  .product-textpage {
+    max-width: 500px; /* Limits text width for readability */
+    text-align: left; /* Align text for better flow */
+  }
+  
+  /* Product Name Styling */
+  .product-textpage h2 {
+    font-family: var(--font-main); /* Bold header styling */
+    font-size: 2rem;
+    color: var(--primary-color); /* Eye-catching header color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Product Description */
+  .product-descriptionpage {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    color: var(--text-color); /* Neutral gray for readability */
+    margin-bottom: 1rem;
+    line-height: 1.6; /* Improved spacing for readability */
+  }
+  
+  /* Product Price */
+  .product-pricepage {
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ingredients Section */
+  .product-textpage h3 {
+    font-family: var(--font-main); /* Bold subheading styling */
+    font-size: 1.5rem;
+    color: var(--secondary-color); /* Lavender Purple for emphasis */
+    margin-bottom: 1rem;
+  }
+  
+  /* Ingredients List Styling */
+  .product-ingredientspage {
+    list-style: square; /* Adds square bullets */
+    padding-left: 1.5rem; /* Indentation for better structure */
+  }
+  
+  .product-ingredientspage li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .product-infopage {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+    }
+  
+    .product-textpage {
+      text-align: center; /* Center-align text on mobile */
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/* Gallery Container */
+.gallery-container {
+    padding: 4%;
+    text-align: center;
+    background-color: var(--accent-color); /* Light background for contrast */
+  }
+  
+  /* Title and Description */
+  .gallery-title {
+    font-family: var(--font-main);
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Bold header color */
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-description {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    color: var(--text-color); /* Subtle gray for readability */
+    margin-bottom: 2rem;
+  }
+  
+  /* Photo Grid */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Space between photos */
+    justify-items: center;
+  }
+  
+  /* Photo Cards */
+  .photo-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .photo {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .photo:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  

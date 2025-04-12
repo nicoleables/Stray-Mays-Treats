@@ -1,0 +1,74 @@
+/* Root Container */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full-page height */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures #root spans the viewport height */
+  }
+  
+  /* Shopping Cart Container */
+  .Shopcontainer {
+    flex-grow: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically if short */
+    padding: 2rem;
+    text-align: center;
+    min-height: 60vh; /* Ensures a minimum height to push the footer down */
+  }
+  
+  /* Shopping Cart List */
+  .shopping-cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .shopping-cart li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Shopping Cart Image Styling */
+  .shopping-cart img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  /* Forms */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--primary-color); /* Matches global footer style */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid var(--primary-color); /* Adds a top border for the footer */
+  }
+  
+  

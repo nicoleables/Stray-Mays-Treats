@@ -1,0 +1,78 @@
+/* Home.css */
+:root {
+  --primary-color: #19e7f1; /* Updated color */
+  --secondary-color: #a7bfff;
+  --accent-color: #e63b96;
+  --neutral-color: #f8f9fa;
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--neutral-color);
+    color: #333;
+  }
+  
+  .hero {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    padding: 50px 0;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-card {
+    background-color: var(--secondary-color);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 1.25rem;
+    color: #000;
+  }
+  
+  .testimonial {
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  

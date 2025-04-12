@@ -1,0 +1,49 @@
+/* Global styles */
+:root {
+    --primary-color: #63dbf0; /* Default primary color */
+    --secondary-color: #a7bfff;
+    --accent-color: #e63b96;
+    --neutral-color: #f8f9fa;
+  }
+  
+  /* Holiday styles */
+  .holiday-section {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .holiday-section.christmas {
+    --primary-color: red;
+    --neutral-color: white;
+  }
+  
+  .holiday-section.easter {
+    --primary-color: pink;
+    --neutral-color: yellow;
+  }
+  
+  .holiday-section.halloween {
+    --primary-color: black;
+    --neutral-color: orange;
+  }
+  
+  .holiday-section.thanksgiving {
+    --primary-color: brown;
+    --neutral-color: gold;
+  }
+  
+  .holiday-section.valentines {
+    --primary-color: pink;
+    --neutral-color: red;
+  }
+  
+  .holiday-section.newYear {
+    --primary-color: midnightblue;
+    --neutral-color: gold;
+  }
+  

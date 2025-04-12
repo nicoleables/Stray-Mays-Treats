@@ -1,0 +1,27 @@
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .filter-dropdown {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
