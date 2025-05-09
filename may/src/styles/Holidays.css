@@ -1,49 +1,149 @@
-/* Global styles */
-:root {
-    --primary-color: #63dbf0; /* Default primary color */
-    --secondary-color: #a7bfff;
-    --accent-color: #e63b96;
-    --neutral-color: #f8f9fa;
-  }
-  
-  /* Holiday styles */
-  .holiday-section {
-    background-color: var(--primary-color);
-    color: var(--neutral-color);
-    width: 100%;
-    height: 200px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .holiday-section.christmas {
-    --primary-color: red;
-    --neutral-color: white;
-  }
-  
-  .holiday-section.easter {
-    --primary-color: pink;
-    --neutral-color: yellow;
-  }
-  
-  .holiday-section.halloween {
-    --primary-color: black;
-    --neutral-color: orange;
-  }
-  
-  .holiday-section.thanksgiving {
-    --primary-color: brown;
-    --neutral-color: gold;
-  }
-  
-  .holiday-section.valentines {
-    --primary-color: pink;
-    --neutral-color: red;
-  }
-  
-  .holiday-section.newYear {
-    --primary-color: midnightblue;
-    --neutral-color: gold;
-  }
+/* General theme styling */
+.website-container.christmas {
+  color: #fff; /* Set text color to white for better contrast */
+  background-color: #228B22; /* Deep green background */
+  background-image: url('../images/snow.jpg'); /* Keeps your Christmas background */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Christmas holiday banner */
+.holiday-banner {
+  background-color: red; /* Bright red banner background */
+  color: #fff; /* White text for contrast */
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Custom buttons or links (if applicable) */
+.christmas .btn {
+  background-color: red; /* Red button background */
+  color: #fff;
+  border: 3px solid #228B22; /* Green border */
+}
+
+.christmas .btn:hover {
+  background-color: white; /* Hover: Swap to green */
+  color: red;
+}
+
+/* Add more elements as needed */
+.christmas a {
+  color: white; /* Gold for links */
+}
+
+/* General text styling for better visibility */
+body, .product-card p, .product-card h3 {
+  color: var(--neutral-color); /* White or off-white for better readability */
+}
+
+/* Button styling for improved hover effects */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--neutral-color); /* Ensure text is readable */
+  border: 1px solid var(--secondary-color); /* Optional border for contrast */
+}
+
+.btn:hover {
+  background-color: var(--secondary-color); /* Change to secondary color */
+  color: var(--accent-color); /* Accent color for hover text */
+  border-color: var(--primary-color); /* Optional hover border */
+}
+
+/* Specific styling for holiday themes */
+.christmas .product-card h3,
+.christmas .product-card p {
+  color: white; /* White text for readability over red/green backgrounds */
+}
+
+.easter .product-card h3,
+.easter .product-card p {
+  color: #333; /* Dark gray text to contrast pastel backgrounds */
+}
+
+.halloween .product-card h3,
+.halloween .product-card p {
+  color: #FFA500; /* Orange text to fit the Halloween theme */
+}
+
+.thanksgiving .product-card h3,
+.thanksgiving .product-card p {
+  color: #FFD700; /* Gold text for a warm feel */
+}
+
+.valentines .product-card h3,
+.valentines .product-card p {
+  color: white; /* White text for visibility over pink */
+}
+
+
+
+.julyFourth .product-card h3,
+.julyFourth .product-card p {
+  color: white; /* White text for visibility over red/blue backgrounds */
+}
+
+/* Buttons for specific holidays */
+.christmas .btn:hover {
+  background-color: green;
+  color: red; /* Red text on hover */
+}
+
+.julyFourth .btn:hover {
+  background-color: white;
+  color: black; /* White text on blue hover */
+}
+
+.halloween .btn:hover {
+  background-color: black;
+  color: orange; /* Orange text on black hover */
+}
+
+.valentines .btn:hover {
+  background-color: #FFB6C1; /* Light pink background */
+  color: #FFFFFF; /* White text */
+}
+
+/* Fourth of July styling for testimonials */
+.julyFourth .testimonial {
+  background-color: #000080; /* Navy blue background for contrast */
+  color: white; /* White text for high visibility */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Fourth of July testimonial form styling */
+.julyFourth .testimonial-form textarea,
+.julyFourth .testimonial-form input {
+  background-color: #f5f5f5; /* Light gray for input fields */
+  color: #000; /* Black text for readability */
+  border: 1px solid #0000FF; /* Blue border for theme consistency */
+}
+
+.julyFourth .testimonial-form textarea::placeholder,
+.julyFourth .testimonial-form input::placeholder {
+  color: #555; /* Gray placeholder text */
+}
+
+.julyFourth .testimonial-form button {
+  background-color: #FF0000; /* Red button background */
+  color: white; /* White text */
+  border: none;
+}
+
+.julyFourth .testimonial-form button:hover {
+  background-color: #0000FF; /* Change to blue on hover */
+  color: white; /* Keep text white */
+}
+
+
+
+
+
   

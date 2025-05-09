@@ -1,11 +1,13 @@
 export const holidays = {
-    christmas: { month: 12, startDay: 1, endDay: 25, theme: 'christmas' },
-    easter: { month: 4, day: 17, theme: 'easter' }, // Replace with the correct Easter date
-    halloween: { month: 10, day: 31, theme: 'halloween' },
-    thanksgiving: { month: 11, day: 24, theme: 'thanksgiving' }, // Example fixed date
-    valentines: { month: 2, day: 14, theme: 'valentines' },
-    newYear: { month: 1, day: 1, theme: 'newYear' },
-  };
+  christmas: { month: 12, startDay: 1, endDay: 25, theme: 'christmas' },
+  easter: { month: 4, day: 20, theme: 'easter' }, // Replace with the correct Easter date
+  halloween: { month: 10, day: 31, theme: 'halloween' },
+  thanksgiving: { month: 11, day: 24, theme: 'thanksgiving' }, // Example fixed date
+  valentines: { month: 2, day: 14, theme: 'valentines' },
+  newYear: { month: 1, day: 1, theme: 'newYear' },
+  julyFourth: { month: 7, day: 4, theme: 'julyFourth' }, // Added Fourth of July
+};
+
   
   export const getHolidayTheme = () => {
     const today = new Date();

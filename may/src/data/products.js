@@ -3,21 +3,21 @@ import Treat from "../images/treats.jpg"; // Import the image properly
 const products = [
   {
     id: 1,
-    name: 'Peanut Butter Biscuits',
-    description: 'Yummy peanut butter flavor',
+    name: 'Tail Wag Twist',
+    description: 'Crispy peanut butter twists',
     price: '$5',
     image: Treat,
-    category: 'Biscuits',
-    ingredients: ['Peanut Butter', 'Oats', 'Eggs', 'Honey'] // List of ingredients
+    category: 'Chews',
+    ingredients: ['Peanut Butter', 'Whole Oat Flour', 'Water'] // List of ingredients
   },
   {
     id: 2,
-    name: 'Chicken Jerky',
-    description: 'Savory chicken jerky',
+    name: 'Banana Woofles',
+    description: 'Baked peanut butter & banana',
     price: '$7',
     image: Treat,
-    category: 'Jerky',
-    ingredients: ['Chicken Breast', 'Olive Oil', 'Herbs']
+    category: 'biscuts',
+    ingredients: ['Banana', 'Peanut Butter', 'whole Oat Flour']
   },
   {
     id: 3,

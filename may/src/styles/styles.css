@@ -37,8 +37,8 @@
   
   nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    margin-left: 5rem;
   }
   
   nav a:hover {

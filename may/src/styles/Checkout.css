@@ -1,0 +1,20 @@
+/* Full-height layout */
+.checkout-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 64.9vh; /* Full height of the viewport */
+  }
+  
+  /* Ensures content takes up available space */
+  .checkout-content {
+    flex: 1;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  

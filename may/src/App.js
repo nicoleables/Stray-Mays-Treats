@@ -11,6 +11,7 @@ import FAQ from './components/FAQ';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ProductDetail from './components/ProductDetail'; // Import ProductDetail component
+import Testimonials from './components/Testimonials'; // Import Testimonials component
 import HolidayTheme from './components/HolidayTheme'; // Import the HolidayTheme component
 import './App.css';
 
@@ -31,6 +32,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/about" element={<About />} />
               <Route path="/product/:id" element={<ProductDetail />} /> {/* Add ProductDetail route */}
+              <Route path="/testimonials" element={<Testimonials />} /> {/* Add Testimonials route */}
             </Routes>
           </main>
           <Footer />
@@ -41,6 +43,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

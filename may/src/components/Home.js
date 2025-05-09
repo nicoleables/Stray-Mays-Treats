@@ -5,6 +5,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../styles/Home.css'; // Assuming you have a CSS file for styling
 
 const Home = () => {
+  const testimonials = [
+    { text: "My dog absolutely loves these treats! I feel good knowing they're made with healthy ingredients.", author: "Happy Customer" },
+    { text: "Stray Mays Treats are a hit with my pup. The variety of flavors is fantastic!", author: "Satisfied Pet Owner" },
+  ];
+
   return (
     <div>
       {/* Hero Section */}
@@ -35,7 +40,6 @@ const Home = () => {
               <p className="product-price">$7</p>
               <Link to="/products" className="btn btn-secondary">View Product</Link>
             </div>
-            {/* Add more featured products here */}
           </div>
         </div>
       </section>
@@ -52,15 +56,14 @@ const Home = () => {
       <section className="testimonials mt-5">
         <div className="container text-center">
           <h2 className="section-title">Customer Testimonials</h2>
-          <div className="testimonial">
-            <p>"My dog absolutely loves these treats! I feel good knowing they're made with healthy ingredients."</p>
-            <p>- Happy Customer</p>
-          </div>
-          <div className="testimonial">
-            <p>"Stray Mays Treats are a hit with my pup. The variety of flavors is fantastic!"</p>
-            <p>- Satisfied Pet Owner</p>
-          </div>
-          {/* Add more testimonials here */}
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial">
+              <p>"{testimonial.text}"</p>
+              <p>- {testimonial.author}</p>
+            </div>
+          ))}
+          {/* Add a link to the dedicated testimonials page */}
+          <Link to="/testimonials" className="btn btn-secondary mt-4">Read & Write Reviews</Link>
         </div>
       </section>
 
@@ -76,6 +79,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
